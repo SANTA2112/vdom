@@ -1,13 +1,20 @@
 @font-face {
   font-family: "FontAwesome";
-  src: url('font-awasome/font/fontawesome-webfont.woff')
+  src: url('fonts/font-awasome/font/fontawesome-webfont.woff')
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('fonts/OpenSansRegular/OpenSansRegular.ttf');
+  font-style: normal;
+  font-weight: normal;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  outline: 0;
+  font-family: 'OpenSansRegular';
 }
 .wrapper {
   min-width: 960px;
@@ -148,4 +155,93 @@
   background: url("images/kitchen3.png") no-repeat center center/cover;
   width: 400px;
   height: 218px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 30px;
+  padding: 0 12px;
+}
+.footer__logo {
+  width: 185px;
+  height: 48px;
+}
+.footer_phone {
+  font-weight: bold;
+}
+.footer_phone span {
+  margin-top: 8px;
+  display: inline-block;
+}
+.footer__contacts {
+  text-align: center;
+}
+.footer_heading {
+  margin-bottom: 12px;
+}
+.footer__text {
+  margin-top: 8px;
+}
+.footer__text_margin {
+  margin-top: 25px;
+}
+.form__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  transition: opacity .5s;
+  will-change: opacity;
+  /*justify-content: center;
+  align-items: center;*/
+  background-color: rgba(0,0,0,0.7);
+}
+.view__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 400px;
+  height: 400px;
+  background-color:#fff;
+  margin: auto;
+  z-index: 2;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.view__form label {
+  width: 100%;
+}
+.view__intput {
+  margin: 10px 0;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.view__intput:focus {
+  border: 1px solid #4CAF50;
+}
+.view__button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: 10px;
+}
+.view__button:hover {
+  background: #43A047;
 }
