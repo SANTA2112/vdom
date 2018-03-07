@@ -29,5 +29,5 @@ void function() {
       setTimeout(function() {
         formWrapper.style.display = '';
       },550);
-  }
+  };
 }();
