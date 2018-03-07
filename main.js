@@ -9,7 +9,7 @@ void function() {
     formWrapper.style.display = 'block';
     setTimeout(function() {
       formWrapper.style.opacity = 1;
-    },0)
+    },0);
   };
   form.onsubmit = function(e) {
     e.preventDefault();
