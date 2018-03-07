@@ -1,5 +1,62 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url('font-awasome/font/fontawesome-webfont.woff')
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.header {
+  background: url("https://162930.selcdn.ru/upload-bxp/iblock/358/3586c047571d722f249afae612e690e9/222bca4dcc0be7b1de334b9f86b4ecbe.jpg") no-repeat center center/cover;
+  height: 600px;
+  position: relative;
+  min-width: 960px;
+  max-width: 1260px;
+  margin: auto;
+}
+.header__logo {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  bottom: 24px;
+  right: 60px;
+}
+.header__bottom {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 60px;
+}
+.header__discription {
+  background-color: #2D383A;
+  color: #fff;
+  padding: 50px 24px;
+  width: 300px;
+}
+.header__heading {
+  font-size: 20px;
+}
+.header__text {
+  margin-top: 20px;
+}
+.header__contacts {
+  font-size: 35px;
+  text-align: right;
+}
+.header__contacts span{
+  font-size: 30px;
+}
+.header__contacts:before {
+  content:"\f095";
+  font-family: 'FontAwesome';
+  margin-right: 40px;
+  transform: translateY(25px);
+  display: inline-block;
 }
