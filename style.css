@@ -245,3 +245,12 @@
 .view__button:hover {
   background: #43A047;
 }
+@media only screen and (max-width: 960px) {
+  .view {
+    padding: 0;
+  }
+  .form__wrapper {
+    bottom: 0;
+    height: auto;
+  }
+}
