@@ -90,13 +90,14 @@
   margin-right: 40px;
   transform: translateY(25px);
   display: inline-block;
+  color: rgb(77,77,77);
 }
 .view {
-  margin: 500px 0 0 0;
+  margin: 350px 0 0 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 180px 0 130px;
+  padding: 0 160px 0 130px;
 }
 .view__image1 {
   background: url("images/kitchen2.png") no-repeat center center/cover;
